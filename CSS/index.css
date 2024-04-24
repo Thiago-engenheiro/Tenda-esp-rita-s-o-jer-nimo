@@ -1,0 +1,67 @@
+/*  importacoes de estilo  */
+/* _______________________________________________________________________________________ */
+
+/*  importacoes de estilo do header  */
+
+@import url("./header/cabecalho__index.css");
+
+/*  importacoes de estilo do main  */
+
+
+
+/*  importacoes de estilo do footer */
+
+
+
+/*  importacoes de fontes */
+
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Todo o conteudo da pagina  */
+/* _______________________________________________________________________________________ */
+
+/* Variaveis globais */
+
+:root {
+    
+    /*  cores que serão usadas no elementos da pagina  */
+    
+    --cor-elementos-01: #252627;
+    --cor-elementos-02: #3970BE;
+
+    /*  cores que serão usadas apenas no textos da pagina  */
+
+    
+    
+
+  
+    
+    /*  cores que serão usadas no textos e elementos da pagina  */
+    --cor-compartilhada-01: white;
+    
+    
+    
+    /* fontes  */
+   
+    --fonte-01: "Playfair Display", serif;
+    --fonte-02: "Roboto", sans-serif;
+
+}
+
+.pagina__inteira {
+
+
+    color:  var(--cor-compartilhada-01);
+    text-decoration: none;
+
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,140 @@
+.cabecalho {
+
+    background-color:  var(--cor-elementos-01);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 40px;
+
+    .cabecalho__titulo {
+
+        font-family: var(--fonte-01);
+        font-size: 2em;
+        font-weight: 800;
+        text-align: center;
+
+    }
+
+    .cabecalho__caixa__de__pesquisa {
+
+        margin: 30px 0px 20px 0px;
+        padding: 1.0em;
+        background-color: transparent;
+        border-radius: 1em;
+        border: 2px solid var(--cor-compartilhada-01);
+        width: 250px;
+    
+    }
+    
+    .cabecalho__caixa__de__pesquisa::placeholder {
+    
+        font-family: var(--fonte-02);
+        font-weight: 400;
+        font-size: 1em;
+        background: url("../../imagens/UsadasNoSite/header/Ícone__busca.png") no-repeat;
+        background-position: 99.9% 0%;
+        height: 3em;
+     
+    }
+
+    input { color: white }
+
+    .cabecalho__caixa__de__pesquisa:focus {
+
+        outline: none;
+        border: 2px solid  var(--cor-elementos-02);
+       
+    }
+
+    .cabecalho__navegacao {
+
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        .cabecalho__navegacao__intens {
+
+            font-family: var(--fonte-02);
+            font-weight: 400;
+            font-size: 1em;
+            color: var(--cor-compartilhada-01);
+            text-decoration: none;
+
+        }
+
+
+
+    }
+
+}
+
+@media (min-width: 720px) {
+
+    .cabecalho {
+
+        .cabecalho__titulo {
+
+            font-size: 2.5em;
+           
+        }
+
+        .cabecalho__caixa__de__pesquisa {
+
+            width: 375px;
+        
+        }
+
+        .cabecalho__navegacao {
+
+            width: 90%;
+
+            .cabecalho__navegacao__intens {
+    
+                font-size: 1.2em;
+    
+            }
+    
+        }
+
+    }
+
+}
+
+@media (min-width: 1100px) {
+
+    .cabecalho {
+
+        flex-direction: row;
+
+        .cabecalho__titulo {
+
+            text-align: start;
+    
+        }
+    
+
+        .cabecalho__caixa__de__pesquisa {
+
+            width: 50%;
+            max-width: 500px;
+        
+        }
+
+        .cabecalho__navegacao {
+
+            justify-content: space-around;
+
+            .cabecalho__navegacao__intens {
+    
+                font-size: 1.2em;
+    
+            }
+    
+        }
+
+    }
+
+}
+
+
