@@ -6,6 +6,13 @@
     align-items: center;
     gap: 30px;
     padding: 40px;
+    align-items: center;
+
+    .cabecalho__logo {
+
+        width: 120px;
+
+    }
 
     .cabecalho__titulo {
 
@@ -63,7 +70,11 @@
 
         }
 
+    }
 
+    .cabecalho__navegacao__intens:hover {
+    
+        color: var(--cor-elementos-02);
 
     }
 
@@ -106,6 +117,7 @@
     .cabecalho {
 
         flex-direction: row;
+ 
 
         .cabecalho__titulo {
 
