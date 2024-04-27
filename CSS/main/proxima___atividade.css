@@ -1,0 +1,240 @@
+.principal__proxima__atividade {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.principal__titulo {
+
+    background-color: var(--cor-elementos-01);
+    padding: 50px;
+    text-align: center;
+    color: var(--cor-elementos-02);
+    font-family: var(--fonte-02);
+    font-weight: 700;
+    font-size: 1.2em;
+
+}
+
+.principal__proxima__atividade__secao {
+
+    background-color: var(--cor-elementos-03);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 70px 40px;
+
+    .display__none{
+
+        display: none;
+
+    }
+
+    .principal__proxima__atividade__secao__card {
+
+        display: flex;
+        flex-direction: column;
+        color: black;
+        font-family: var(--fonte-02);
+        background-color: var(--cor-compartilhada-01);
+        padding: 30px 20px 60px 20px;
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        gap: 70px;
+        align-items: center;
+        width: 100%;
+
+        .principal__proxima__atividade__secao__card__esquerdo {
+
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+
+            .principal__proxima__atividade__secao__card__titulo {
+
+                font-weight: 600;
+                font-size: 1.5em;
+                
+            }
+    
+            .principal__proxima__atividade__secao__card__subtitulo {
+    
+                font-weight: 500;
+                font-size: 1.2em;
+    
+            }
+    
+            .principal__proxima__atividade__secao__card__texto {
+    
+                font-weight: 400;
+                font-size: 1.1em;
+    
+            }
+
+        }
+
+        .principal__proxima__atividade__secao__card__direito {
+
+            .principal__proxima__atividade__secao__card__botao {
+
+                background-color: var(--cor-elementos-01);
+                padding: 25px 50px;
+         
+                text-decoration: none;
+                color: var(--cor-compartilhada-01);
+                text-align: center;
+
+            }
+
+            .principal__proxima__atividade__secao__card__botao:hover {
+
+                background-color: var(--cor-elementos-02);
+
+            }
+
+        }
+
+    }
+
+}
+
+@media (min-width: 720px) {
+
+    .principal__titulo {
+
+        font-size: 2em;
+    
+    }
+
+    .principal__proxima__atividade__secao {
+
+        gap: 80px;
+
+        .principal__proxima__atividade__secao__card {
+
+            flex-direction: row;
+            justify-content: space-around;
+            gap: 0px;
+            width: 90%;
+
+            .principal__proxima__atividade__secao__imagem {
+
+                display: none;
+
+            }
+
+            .principal__proxima__atividade__secao__card__direito {
+
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+                align-items: center;
+
+                .principal__proxima__atividade__secao__card__botao {
+
+                    padding: 25px 70px;
+                   
+                }
+
+                .display__none {
+
+                    display: block;
+
+                }
+
+            }
+
+        }
+
+    }
+  
+}
+  
+@media (min-width: 1100px) {
+
+    .principal__proxima__atividade__secao {
+
+        
+
+        .display__none{
+
+            display: inline-block;
+    
+        }
+
+        .principal__proxima__atividade__secao__card {
+
+            width: 55%;
+           
+ 
+            .principal__proxima__atividade__secao__card__esquerdo {
+
+                gap: 60px;
+
+            }
+
+            .principal__proxima__atividade__secao__card__direito {
+
+                gap: 100px;
+
+                .principal__proxima__atividade__secao__card__botao {
+
+                    padding: 25px 65px;
+                   
+                }
+
+            }
+
+        }
+
+    }
+  
+}
+
+@media (min-width: 1500px) {
+
+    .principal__proxima__atividade__secao {
+
+        .principal__proxima__atividade__secao__imagem {
+
+            width: 600px;
+            height: 600px;
+
+        }
+
+        .principal__proxima__atividade__secao__card {
+
+            width: 40%;
+           
+ 
+            .principal__proxima__atividade__secao__card__esquerdo {
+
+                gap: 60px;
+
+            }
+
+            .principal__proxima__atividade__secao__card__direito {
+
+                gap: 60px;
+
+                .principal__proxima__atividade__secao__imagem {
+
+                    width: 300px;
+                    height: 300px;
+
+                }
+
+                .principal__proxima__atividade__secao__card__botao {
+
+                    padding: 25px 90px;
+                   
+                }
+
+            }
+
+        }
+
+    }
+  
+}
