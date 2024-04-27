@@ -64,50 +64,105 @@
         -->
 
         <nav class="cabecalho__navegacao">
-        
+
             <a class="cabecalho__navegacao__intens" href=""> Home <!-- Ainda não tem o link -->
-                    
+                            
             </a>
 
             <a class="cabecalho__navegacao__intens" href=""> Historia <!-- Ainda não tem o link -->
-                    
+                                
             </a>
-
-            <a class="cabecalho__navegacao__intens" href=""> Missão <!-- Ainda não tem o link -->
-                    
+     
+            <a class="cabecalho__navegacao__intens" href="">Missão <!-- Ainda não tem o link -->
+                                
             </a>
-
+              
             <a class="cabecalho__navegacao__intens" href=""> Contato <!-- Ainda não tem o link -->
-                    
+                                    
             </a>
-
+        
         </nav>
 
     </header>
 
-<main class="principal">
+    <main class="principal">
 
-    <div class="conteudo__principal__carrossel__divisao">
-
-        <div class="conteudo__principal__carrossel__com__paginacao">
-
-            <div class="swiper">
-
+        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
+        
             <div class="swiper-wrapper">
 
-               
- 
-            <div class="swiper-slide"><img src="./imagens/UsadasNoSite/Main/placeholder.webp" alt="Imagem de exemplo" width="100%" height="1200px"></div>
-            <div class="swiper-slide"><img src="./imagens/UsadasNoSite/Main/placeholder - 2.jpg" alt="Imagem de exemplo" width="100%" height="1200px"></div>
-            <div class="swiper-slide"><img src="./imagens/UsadasNoSite/Main/placeholder - 3.jpg" alt="Imagem de exemplo" width="100%" height="1200px"></div>
-            
+                <div class="swiper-slide" style="background-image: url('./imagens/UsadasNoSite/Main/placeholder.webp'); background-repeat: no-repeat">
+
+                    <div class="title">Titulo de alguma coisa</div>
+
+                    <div class="subtitle">Subtitulo de alguma coisa</div>
+
+                    <div class="text">
+
+                        <p>
+                            Texto de alguma coisa, Texto de alguma coisa, Texto de alguma coisa, Texto de alguma coisa,
+                            Texto de alguma coisa, Texto de alguma coisa , Texto de alguma coisa, Texto de alguma coisa,
+                            Texto de alguma coisa, Texto de alguma coisa , Texto de alguma coisa, Texto de alguma coisa,
+                            Texto de alguma coisa, Texto de alguma coisa , Texto de alguma coisa, Texto de alguma coisa
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide" style="background-image: url('./imagens/UsadasNoSite/Main/placeholder\ -\ 2.jpg'); background-repeat: no-repeat">
+
+                    <div class="title">Titulo de alguma coisa</div>
+
+                    <div class="subtitle">Subtitulo de alguma coisa</div>
+
+                    <div class="text">
+
+                        <p>
+                            Texto de alguma coisa, Texto de alguma coisa, Texto de alguma coisa, Texto de alguma coisa,
+                            Texto de alguma coisa, Texto de alguma coisa , Texto de alguma coisa, Texto de alguma coisa,
+                            Texto de alguma coisa, Texto de alguma coisa , Texto de alguma coisa, Texto de alguma coisa,
+                            Texto de alguma coisa, Texto de alguma coisa , Texto de alguma coisa, Texto de alguma coisa
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide" style="background-image: url('./imagens/UsadasNoSite/Main/placeholder\ -\ 3.jpg'); background-repeat: no-repeat">
+
+                    <div class="title">Titulo de alguma coisa</div>
+
+                    <div class="subtitle">Subtitulo de alguma coisa</div>
+
+                    <div class="text">
+
+                        <p>
+
+                            Texto de alguma coisa, Texto de alguma coisa, Texto de alguma coisa, Texto de alguma coisa,
+                            Texto de alguma coisa, Texto de alguma coisa , Texto de alguma coisa, Texto de alguma coisa,
+                            Texto de alguma coisa, Texto de alguma coisa , Texto de alguma coisa, Texto de alguma coisa,
+                            Texto de alguma coisa, Texto de alguma coisa , Texto de alguma coisa, Texto de alguma coisa
+                        </p>
+
+                    </div>
+
+                </div>
+
             </div>
-    
+
             <div class="swiper-button-prev swiper__setas"></div>
+
             <div class="swiper-button-next swiper__setas"></div>
-    
-            </div>
-        
+
+            <div class="swiper-pagination"></div>
+
+        </div>
+
+        <div class="principal__proxima_atividade">
+
+
+
         </div>
 
     </main>
@@ -120,34 +175,51 @@
 
 <script>
 
-    const swiper1 = new Swiper('.swiper', {
+var swiper = new Swiper(".mySwiper", {
 
-       
+    speed: 600,
 
-        speed: 400,
-        spaceBetween: 0,
-        slidesPerView: 1,
-        paceBetween: 0,
+    pagination: {
 
-        autoplay: {
+        el: ".swiper-pagination",
+        clickable: true,
 
-            delay: 100000,
+    },
 
-        },    
+    autoplay: {
 
-        navigation: {
+    delay: 10000,
 
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+    },
 
-        },
+    navigation: {
 
-        grabCursor: true,
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
 
-    });
+
+    },
+
+    effect: 'flip',
+
+        flipEffect: {
+        slideShadows: false,
+
+    },
+
+    loop: true, 
+ 
+    rewind: {
+
+        boleano: true 
+
+     },
+
+    grabCursor: true,
+
+});
 
 </script>
-
 
 </body>
 
