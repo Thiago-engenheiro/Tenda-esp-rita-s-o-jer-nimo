@@ -10,6 +10,7 @@
 @import url("./main/swiper.css");
 @import url("./main/proxima___atividade.css");
 @import url("./main/calendario.css");
+@import url("./main/cadastrar__email.css");
 
 /*  importacoes de estilo do footer */
 
@@ -17,6 +18,7 @@
 
 /*  importacoes de fontes */
 
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -49,6 +51,7 @@
    
     --fonte-01: "Playfair Display", serif;
     --fonte-02: "Roboto", sans-serif;
+    --fonte-03: "Outfit", sans-serif;
 
 }
 

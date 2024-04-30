@@ -1,0 +1,244 @@
+.principal__cadastrar__email {
+
+    background-color: var(--cor-elementos-02);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    padding: 10px;
+
+
+    .principal__cadastrar__email__textos {
+
+
+        .principal__cadastrar__email__titulo {
+
+            font-family: var(--fonte-02);
+            font-weight: 700;
+            font-size: 1.2em;
+            margin: 20px 0px;
+    
+        }
+    
+        .principal__cadastrar__email__texto {
+    
+            font-family: var(--fonte-02);
+            font-weight: 500;
+            font-size: 1.0em;
+    
+    
+        }
+        
+    }
+
+    .form {
+    font-family: var(--fonte-03);
+    position: relative;
+    width: 90%;
+    height: auto;
+    padding: 3rem;
+    
+    }
+    .input-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    
+   
+    }
+    .input-container::before {
+    position: absolute;
+    content: "";
+    height: 30%;
+    width: 0.12rem;
+    left: 16%;
+    border-radius: 0.5rem;
+    }
+    
+    .input-container .input-field {
+        position: relative;
+        max-height: 4.2rem;
+        padding: 1.8rem 2.5rem;
+        padding-left: 5rem !important;
+        border: 0.15rem solid rgb(68, 68, 68);
+        color: #d2d2d2;
+        outline: none;
+        border-radius: 3rem;
+        font-size: 1.3rem;
+        font-weight: 400;
+        width: 100%;
+        background: transparent;
+        transition: border-color 0.3s ease;
+        cursor: pointer;
+        
+        }
+
+    .input-container label {
+
+        position: absolute;
+        top: 50%;
+        left: 20%;
+        transform: translateY(-50%);
+        font-size: 0.9rem;
+        transition: 0.3s ease-in-out;
+        font-weight: 500;
+        color: #999999;
+        padding: 0 0.3rem;
+        user-select: none;
+
+      }
+      #email-icon {
+        position: absolute;
+        left: 8%;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #999999;
+        font-size: 1.2rem;
+      }
+      .input-field:focus + label {
+        top: -15%;
+        left: 7%;
+        color: #d2d2d2;
+      }
+      .input-field:focus {
+        border-color: #96c477;
+      }
+      .input-field.invalid {
+        border-color: #ff654a;
+      }
+      #email-input:not(:placeholder-shown)#email-input:not(:focus) + label {
+        top: -15%;
+        left: 7%;
+        color: #d2d2d2;
+      }
+      #email-input:not(:placeholder-shown)#email-input:not(:focus) {
+        border-color: #96c477;
+      }
+
+      .toast-msg {
+        position: absolute;
+        left: 8%;
+        top: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 0;
+        opacity: 0;
+        transition: 0.3s ease;
+      }
+      .toast-msg.active {
+        margin-top: 0.5rem;
+        opacity: 1;
+      }
+      .toast-msg p {
+        font-size: 0.8rem;
+        color: #ff654a;
+        margin-left: 0.3rem;
+      }
+      .toast-msg.success p {
+        color: #97e365;
+      }
+      .toast-msg i {
+        font-size: 1rem;
+        color: #ff654a;
+      }
+      .toast-msg.success i {
+        color: #97e365;
+      }
+      .submit-btn {
+        position: relative;
+        padding: 0.4rem 0.8rem;
+        font-size: 1.2rem;
+        text-transform: capitalize;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        float: right;
+        margin-top: 1rem;
+        margin-right: 1rem;
+        border: none;
+        outline: none;
+        background-color: #eeeeee;
+        transition: 0.1s ease-in-out;
+      }
+      .submit-btn:active {
+        transform: scale(0.95);
+      }
+    
+}
+
+
+@media (min-width: 720px) {
+
+    .principal__cadastrar__email {
+
+        .principal__cadastrar__email__textos {
+
+            .principal__cadastrar__email__titulo {
+
+                font-size: 1.8em;
+        
+            }
+        
+            .principal__cadastrar__email__texto {
+        
+                font-size: 1.5em;
+        
+            }
+            
+        }
+  
+        .form {
+        
+            width: 70%;
+            
+        }
+
+    }
+
+}
+  
+@media (min-width: 1100px) {
+
+    .principal__cadastrar__email {
+
+        flex-direction: row;
+        justify-content: center;
+   
+        .principal__cadastrar__email__textos {
+
+            padding: 0px 0px 80px 0px;
+
+            .principal__cadastrar__email__titulo {
+
+                font-size: 1.8em;
+        
+            }
+        
+            .principal__cadastrar__email__texto {
+        
+                font-size: 1.5em;
+        
+            }
+            
+        }
+  
+        .form {
+        
+            width: 30%;
+            
+        }
+
+    }
+
+   
+  
+}
+
+@media (min-width: 1500px) {
+
+}
