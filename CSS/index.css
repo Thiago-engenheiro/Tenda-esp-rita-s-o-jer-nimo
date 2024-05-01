@@ -14,7 +14,8 @@
 
 /*  importacoes de estilo do footer */
 
-
+@import url("./footer/rodape.css");
+@import url("./footer/rodape.temporario.css");
 
 /*  importacoes de fontes */
 
@@ -34,6 +35,7 @@
     --cor-elementos-01: #252627;
     --cor-elementos-02: #3970BE;
     --cor-elementos-03: #D3D3D3;
+    --cor-elementos-04: #FFC756;
 
     /*  cores que serão usadas apenas no textos da pagina  */
 

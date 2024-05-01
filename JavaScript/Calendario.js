@@ -30,7 +30,6 @@ document.addEventListener('DOMContentLoaded', function() {
       list: 'Lista',
     },
 
-
   events: [
 
     {
@@ -90,11 +89,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
   ]
 
-
   });
 
   // Adicione a fonte de eventos após a inicialização do calendário
-
 
   // Função para verificar a largura da tela e forçar a visualização de lista quando necessário
   function checkWindowSize() {
